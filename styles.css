@@ -1,0 +1,393 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    --color-text-grey: #7D7987;
+    --block-background-blue: #F3FBFF;
+    --header-color: #462E6A;
+    --button-color: #458FF6;
+}
+
+/* header */
+header {
+    position: sticky;
+    top: -80px;
+    background-color: #fff;
+    padding: 0 20px;
+}
+
+.container {
+    margin: auto;
+    width: 1200px;
+    padding-left: 15px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 96px 0 20px 0;
+}
+
+.logo {
+    color: var(--header-color);
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.menu-items {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-item {
+    list-style-type: none;
+}
+
+.menu-item a {
+    color: #1f153477;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 50px;
+    transition: all 0.5s;
+}
+
+.menu-item a:hover {
+    color: #1F1534;
+}
+
+/* header */
+
+/* main */
+
+/* banner */
+.main-picture {
+    width: 577px;
+    height: 392px;
+    margin-top: 30px;
+}
+
+.title {
+    font-size: 48px;
+    line-height: 56px;
+    color: #3C567B;
+    font-weight: 600;
+    ;
+}
+
+.main-description {
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+
+.main-description p {
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #93C1F9;
+    margin-bottom: 100px;
+}
+
+.common-button {
+    height: 56px;
+    color: var(--button-color);
+    border-radius: 55px;
+    border: 1px solid var(--button-color);
+    font-size: 18px;
+    font-weight: 700;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.main-description .common-button {
+    background-color: var(--button-color);
+    color: #fff;
+}
+
+.banner {
+    display: flex;
+    align-items: start;
+    padding-top: 130px;
+    padding-bottom: 180px;
+}
+
+.banner .common-button {
+    padding: 0 50px;
+}
+
+/* banner */
+
+/* services */
+.services {
+    background: var(--block-background-blue);
+    padding: 110px 0 88px 0;
+}
+
+.services-title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 56px;
+    color: var(--header-color);
+    text-align: center;
+}
+
+.services p {
+    font-weight: 500;
+    font-size: 19xp;
+    line-height: 27px;
+    color: #A7A7A7;
+    text-align: center;
+    margin-bottom: 110px;
+}
+
+.services-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 354px);
+    gap: 36px;
+}
+
+.services-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 54px 60px;
+    background-color: #fff;
+    box-shadow: 10px 40px 50px 0px #E5E9F666;
+    border-radius: 20px;
+}
+
+.services-button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.services-button-wrapper .common-button {
+    width: 282px;
+}
+
+.services-card span {
+    display: block;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.services-card p {
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--color-text-grey);
+    font-weight: 300;
+    text-align: left;
+}
+
+/* services */
+
+/* providers, app, find */
+
+.providers {
+    margin-top: 100px;
+    margin-bottom: 220px;
+}
+
+.app {
+    margin-top: 50px;
+    margin-bottom: 160px;
+}
+
+.providers .container,
+.app .container,
+.find .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.providers-description p,
+.app-description p,
+.find p {
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--color-text-grey);
+    margin-bottom: 36px;
+}
+
+.providers-description p,
+.app-description p {
+    margin-top: 60px;
+}
+
+.find p {
+    margin-top: 20px;
+}
+
+.block-title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 56px;
+    color: var(--header-color);
+}
+
+.providers-description .common-button {
+    width: 220px;
+}
+
+.app-description .common-button {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    width: 274px;
+}
+
+.app-button-icon {
+    margin-left: 5px;
+}
+
+.find .common-button {
+    width: 180px;
+}
+
+.find-image {
+    margin-right: 50px;
+}
+
+.find {
+    background: var(--block-background-blue);
+    padding-top: 160px;
+    padding-bottom: 140px;
+}
+
+/* providers, app, find */
+
+/* contacts */
+.contacts {
+    background: var(--block-background-blue);
+    padding-top: 100px;
+    padding-bottom: 250px;
+}
+
+.contacts .container {
+    background: linear-gradient(208.18deg, #6888C8 9.05%, #5A98F2 76.74%);
+    border-radius: 20px;
+}
+
+.contacts-form {
+    width: 508px;
+    margin: auto;
+}
+
+.contacts-form input {
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 700;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contacts-form input::placeholder {
+    color: #fff;
+}
+
+.contacts-form-control {
+    margin-bottom: 40px;
+}
+
+.contacts-form-button {
+    color: #fff;
+    border-color: #fff;
+    width: 100%;
+    margin-top: 56px;
+}
+
+.contacts-block .block-title {
+    color: #fff;
+    text-align: center;
+}
+
+.contacts-block {
+    padding-top: 88px;
+    padding-bottom: 140px;
+}
+
+/* contacts */
+
+/* main */
+
+/* footer */
+footer {
+    height: 400px;
+    background: linear-gradient(183.41deg, #6888C8 -8.57%, #5A98F2 82.96%);
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+}
+
+.footer-content p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #fff;
+    width: 360px;
+}
+
+.footer-content-block {
+    flex: 1;
+    font-weight: 500;
+    margin-top: 100px;
+}
+
+.footer-logo {
+    font-size: 29px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-copyright {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.footer-menu-items {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu-item {
+    list-style-type: none;
+}
+
+.footer-menu-item a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 38px;
+}
+
+.footer-navigation-title {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 19px;
+    margin-top: 3px;
+    display: inline-block;
+}
+
+/* footer */
